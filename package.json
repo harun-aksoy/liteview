@@ -1,0 +1,27 @@
+{
+  "name": "liteview",
+  "version": "2.0.0",
+  "description": "LiteView2 is a minimal, expressive UI layer for the DOM and engine system for GAMES.",
+  "keywords": [
+    "ui",
+    "minimal",
+    "minimalist",
+    "game",
+    "liteview"
+  ],
+  "homepage": "https://github.com/harun-aksoy/liteview#readme",
+  "bugs": {
+    "url": "https://github.com/harun-aksoy/liteview/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harun-aksoy/liteview.git"
+  },
+  "license": "MIT",
+  "author": "Harun Aksoy",
+  "type": "module",
+  "main": "src/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
