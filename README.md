@@ -2,11 +2,14 @@
 
 LiteView is a minimal, expressive UI layer for the DOM, engine system for GAME, focusing on chainable components, real-time updates, and platform closeness without frameworks or wrappers.
 
+```bash
+npm install @harun-aksoy/liteview
+```
+
 ## Basic View
 
-JavaScript
 
-```
+```js
 View()
   .frame(200, 80)
   .position(self.center, self.center)
@@ -18,9 +21,7 @@ Everything is chainable. Everything is real.
 
 ## Layout & Positioning
 
-JavaScript
-
-```
+```js
 View()
   .frame(self.half, 60)
   .position(self.trailing, self.bottom)
@@ -33,9 +34,8 @@ Layouts respond naturally to resize events.
 
 ## Resize-aware Components
 
-JavaScript
 
-```
+```js
 View()
   .background(Color("orange"))
   .on("resize", (self, w, h) => {
@@ -48,9 +48,8 @@ Each component owns its own resize logic.
 
 ## Text
 
-JavaScript
 
-```
+```js
 Text("Hello Liteview")
   .size(24)
   .bold()
@@ -61,9 +60,8 @@ Text is just styled DOM — no wrappers, no templates.
 
 ## Gestures
 
-JavaScript
 
-```
+```js
 View()
   .components(Gesture)
   .background(Color("blue"))
@@ -79,9 +77,8 @@ Built-in gestures: tap, doubletap, press, longpress, drag, hover
 
 ## Animation
 
-JavaScript
 
-```
+```js
 View()
   .background(Color("green"))
   .ease("inout", 1, false, { loop: Infinity }, (self, p) => {
@@ -91,9 +88,8 @@ View()
 
 Spring-based motion:
 
-JavaScript
 
-```
+```js
 View()
   .spring(20, {}, (self, p) => {
     self.scale?.(1 + p * 0.2)
@@ -106,9 +102,8 @@ Animations are driven by a fixed timestep update loop.
 
 Liteview can integrate with p2.js for simple physics-driven UI.
 
-JavaScript
 
-```
+```js
 View()
   .components(Physic, Gesture)
   .frame(50, 50)
@@ -122,9 +117,8 @@ View()
 
 Static bodies:
 
-JavaScript
 
-```
+```js
 View()
   .components(Physic)
   .mass(0)
