@@ -2,6 +2,13 @@
 
 LiteView is a minimal, expressive UI layer for the DOM, engine system for GAME, focusing on chainable components, real-time updates, and platform closeness without frameworks or wrappers.
 
+### 🔗 Live Demo
+A mobile-first experimental website built with a minimal LiteView setup.
+
+👉 **[View the live demo](https://harun-aksoy.github.io/diyazilim/)**
+
+
+
 ```bash
 npm install lite-view-2
 ```
